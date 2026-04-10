@@ -1,0 +1,154 @@
+/* Nome: Edgard Petri - RA: 0040962423041 - Faculdade: Fatec Americana - Semestre 4 */
+
+/* Corpo */
+body{
+
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 5px;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+/* Header com ParaLaxe */
+header{
+
+    height: 100vh;
+    width: 100%;
+    background-image: url(Imagem/Albet_Einstain.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* SobrePosição */
+
+.OverLay{
+
+    background: blue;
+    color:white;
+    padding: 20px;
+    text-align: center;
+
+    /* Animação */
+
+    animation: fadeIn 2s easy-in-out;
+
+}
+
+.OverLay h1{
+
+font-size: 3em;
+
+}
+
+.OverLay p{
+
+    margin-top: 10px;
+
+}
+
+/* Biografia */
+
+.Biografia{
+
+    padding: 40px;
+    text-align: center;
+
+}
+
+.Biografia h1{
+
+    margin-bottom: 20px;
+
+}
+
+/* Conquistas */
+
+.Conquistas{
+
+    padding: 60px;
+    background: #f4f4f4;
+    text-align: center;
+
+}
+
+.Item{
+
+    margin: 15px;
+    padding: 10px;
+    background: white;
+
+    /* Animação de Entrada */
+
+    animation: slideUp 1s ease;
+
+}
+
+button{
+
+    margin-top: 40px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-color: blue;
+    background-color: blue;
+    color: snow;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+button:hover{
+
+    background-color: red;
+    transform: scale(1.1);
+
+}
+
+footer{
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+}
+
+/* Animações */
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp{
+    from{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsivo */
+
+@media (max-width: 600px){
+    .OverLay h1 {
+        font-size: 2em;
+    }
+}
